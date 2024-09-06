@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Landing Page</title>
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+   
+  <div class="sidebar">
+    <a href="./home.html" target="iframe_a"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="./about.html" target="iframe_a"><i class="fa fa-fw fa-wrench"></i> About</a>
+    <a href="#clients"><i class="fa fa-fw fa-user"></i> Clients</a>
+    <a href="./contact.html" target="iframe_a"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+  </div>
+  
+  <div class="topnav">
+    <a class="active" href="#logo">Logo</a>
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </div>
+
+  <div class="container">
+    <iframe class="responsive-iframe" name="iframe_a"></iframe>
+  </div>
+
+      <div class="footer">
+        <p>Thank you.</p> 
+       <b style="font-size: 10px;"> Last Modified: <b id="latestModified" ></b> </b>
+        
+            <script>                
+                let text =document.lastModified;
+                document.getElementById("latestModified").innerHTML = text;
+            </script>
+      </div>
+</body>
+</html>
